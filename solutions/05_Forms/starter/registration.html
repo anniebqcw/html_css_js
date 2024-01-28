@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a Course</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+        
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="QA Corporate Logo">
+        <h1 style="background-image:url(images/trainer.jpg); padding: 4em 1em; color: white; background-size: cover">Course Registration</h1> 
+    </header>
+    
+    <!-- insert form here -->
+    <form action="">
+        <fieldset>
+            <legend>Your Details</legend>
+                <ul>
+                    <label for="First name">First name</label>
+                    <input type="text" name="fname" id="fname" autofocus>
+                </ul>
+                <ul>
+                    <label for="First name">Surname</label>
+                    <input type="text" name="lname" id="lname">
+                </ul>
+                <ul>
+                    <label for="First name">Position / Role</label>
+                    <input type="text" name="posrole" id="posrole">
+                </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <ul>
+                <label for="course">Course</label>
+                <select name="courses" id="courses">
+                    <option value="progjs">Programming with JavaScript</option>
+                    <option value="webdevhtml5">Developing Web Applications using HTML5</option>
+                    <option value="responsivewebdev">Developing Responsive Websites</option>
+                    <option value="jquery">Leveraging the Power of jQuery</option>
+                </select>
+            </ul>
+            <ul>
+                <label for="delegates">Number of delegates</label>
+                <input type="number" name="delegates" id="delegates" min="1" max="12">
+            </ul>
+            <ul>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+            </ul>
+        </fieldset>
+        <fieldset>
+            <ul>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@domain.com">
+            </ul>
+            <ul>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="Eg. +447500000000">
+            </ul>
+            <input type="submit"/>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
